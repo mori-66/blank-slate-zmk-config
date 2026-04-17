@@ -2,21 +2,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-chosen {
-zmk,physical-layout = &layout_ortho_4x12_all1u;
-};
+    chosen {
+        zmk,physical-layout = &layout_ortho_4x12_all1u;
+    };
 
-keymap {  
-    compatible = "zmk,keymap";  
+    keymap {
+        compatible = "zmk,keymap";
 
-    default_layer {  
-        bindings = 
-
-&none    &kp Q      &kp W      &kp F       &kp P      &kp B      &kp J      &kp L      &kp U      &kp Y      &kp BACKSPACE   &none
-&none    &kp A      &kp R      &kp S       &kp T      &kp G      &kp M      &kp N      &kp E      &kp I      &kp O           &none
-&none    &kp Z      &kp X      &kp C       &kp D      &kp V      &kp K      &kp H      &none      &SPACE     &kp ENTER       &none
-&none    &none      &none      &none       &none      &LSHFT     &kp LSHFT  &none      &none      &none      &none           &none
-  >;
-};
-};
+        default_layer {
+            bindings = 
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J     &kp L  &kp U  &kp Y  &kp BACKSPACE  &none
+&none  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M     &kp N  &kp E  &kp I  &kp O          &none
+&none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K     &kp H  &TAB   &SPACE &kp ENTER      &none
+&none  &none  &none  &none  &none  &LSHFT &kp LSHFT &none  &none  &none  &none          &none
+            >;
+        };
+    };
 };
